@@ -1,6 +1,9 @@
 import React from "react";
-import { Stack } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
 import DashboardHeader from "./components/DashboardHeader";
+import SalesBoard from "../SalesBoard";
+import ProfitsBoard from "../ProfitsBoard";
+import CountryBoard from "../CountryBoard";
 
 const Dashboard = () => {
   return (
@@ -14,6 +17,11 @@ const Dashboard = () => {
       pb="3rem"
     >
       <DashboardHeader />
+      <Flex mt="2.3rem" gap="1.2rem">
+        <SalesBoard />
+        <ProfitsBoard />
+        <CountryBoard />
+      </Flex>
     </Stack>
   );
 };

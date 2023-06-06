@@ -1,5 +1,5 @@
-import { Avatar, AvatarBadge, Box, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
+import { Avatar, AvatarBadge, Box, Flex, Heading } from "@chakra-ui/react";
 import ICBell from "../../../../icons/ic-bell";
 
 const DashboardHeader = () => {
@@ -27,7 +27,7 @@ const DashboardHeader = () => {
         >
           <ICBell color="#4B465C" width="2.6rem" height="2.6rem" />
         </Box>
-        <Avatar ml="2.4rem">
+        <Avatar ml="2.4rem" src="/assets/purple.png">
           <AvatarBadge boxSize="1.25em" bg="green.500" />
         </Avatar>
       </Flex>
