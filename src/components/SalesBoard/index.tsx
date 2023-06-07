@@ -1,20 +1,11 @@
 import React from "react";
 import Board from "../Board";
-import {
-  Box,
-  Flex,
-  Image,
-  Stack,
-  Stat,
-  StatHelpText,
-  StatNumber,
-  Text,
-} from "@chakra-ui/react";
-import ICArrow from "../../icons/ic-arrow";
+import { Box, Image, Stack, Text } from "@chakra-ui/react";
+import StatDetail from "../StatDetail";
 
 const SalesBoard = () => {
   return (
-    <Board pt="2rem" pl="4.3rem" pb="2.8rem" display="flex">
+    <Board pt="2rem" pl="4.3rem" pb="2.8rem" display="flex" flex="0 1 35%">
       <Box
         borderRight="1px solid #DBDADE"
         pr="3.9rem"
@@ -32,22 +23,11 @@ const SalesBoard = () => {
             Last 7 days
           </Text>
         </Stack>
-        <Stat gap="1.6rem">
-          <StatNumber fontSize="3.2rem" fontWeight="700">
-            $350K
-          </StatNumber>
-          <Flex gap="0.8rem">
-            <StatHelpText display="flex">
-              <ICArrow width="1.6rem" color="#1EB564" />
-              <Text fontSize="1.4rem" fontWeight={500} color="#1EB564">
-                8.56K
-              </Text>
-            </StatHelpText>
-            <StatHelpText fontSize="1.4rem" fontWeight={500} color="#8B909A">
-              vs last 7 days
-            </StatHelpText>
-          </Flex>
-        </Stat>
+        <StatDetail
+          statNumber="$350K"
+          incrementNumber="8.56K"
+          period="vs last & days"
+        />
       </Stack>
     </Board>
   );

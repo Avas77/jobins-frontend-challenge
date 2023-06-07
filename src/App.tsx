@@ -17,7 +17,7 @@ const theme = extendTheme({
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Flex backgroundColor="#F5F5F5" height="100vh">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Dashboard />
     </Flex>
   </ChakraProvider>

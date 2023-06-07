@@ -17,7 +17,7 @@ const Dashboard = () => {
       pb="3rem"
     >
       <DashboardHeader />
-      <Flex mt="2.3rem" gap="1.2rem">
+      <Flex mt="2.3rem" gap="1.2rem" justifyContent="space-between">
         <SalesBoard />
         <ProfitsBoard />
         <CountryBoard />
