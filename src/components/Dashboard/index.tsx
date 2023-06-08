@@ -4,6 +4,8 @@ import DashboardHeader from "./components/DashboardHeader";
 import SalesBoard from "../SalesBoard";
 import ProfitsBoard from "../ProfitsBoard";
 import CountryBoard from "../CountryBoard";
+import UserBoard from "../UserBoard";
+import SearchAndFilter from "../SearchAndFilter";
 
 const Dashboard = () => {
   return (
@@ -22,6 +24,8 @@ const Dashboard = () => {
         <ProfitsBoard />
         <CountryBoard />
       </Flex>
+      <UserBoard />
+      <SearchAndFilter />
     </Stack>
   );
 };

@@ -2,6 +2,7 @@ import * as React from "react";
 import { ChakraProvider, Flex, extendTheme } from "@chakra-ui/react";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
+import { tabsTheme } from "./TabTheme";
 
 const theme = extendTheme({
   styles: {
@@ -11,6 +12,9 @@ const theme = extendTheme({
         boxSizing: "border-box",
       },
     },
+  },
+  components: {
+    Tabs: tabsTheme,
   },
 });
 
