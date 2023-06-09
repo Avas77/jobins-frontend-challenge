@@ -12,7 +12,7 @@ const SalesBoard = () => {
         display="flex"
         alignItems="center"
       >
-        <Image src="/assets/business.svg" />
+        <Image src="/assets/business.svg" width="73rem" maxW="7.3rem" />
       </Box>
       <Stack pl="3.3rem" pr="5.2rem" gap="3rem">
         <Stack>

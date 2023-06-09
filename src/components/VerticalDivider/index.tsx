@@ -8,6 +8,10 @@ const VerticalDivider = () => {
       alignSelf="center"
       height="13.9rem"
       color="#DBDADE"
+      display={{
+        base: "none",
+        lg: "block",
+      }}
     />
   );
 };

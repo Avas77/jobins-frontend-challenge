@@ -10,7 +10,12 @@ import UserTabs from "../UserTabs";
 const UserBoard = () => {
   return (
     <Board mt="1.7rem">
-      <Flex>
+      <Flex
+        direction={{
+          base: "column",
+          lg: "row",
+        }}
+      >
         <UserInfo />
         <VerticalDivider />
         <PersonalInfo />

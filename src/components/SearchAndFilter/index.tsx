@@ -6,7 +6,11 @@ import SearchField from "../SearchField";
 
 const SearchAndFilter = () => {
   return (
-    <Flex mt="1.8rem" justify="space-between">
+    <Flex
+      mt="1.8rem"
+      justify="space-between"
+      direction={{ base: "column", md: "row" }}
+    >
       <HStack gap="1.4rem">
         <SelectDropdown
           placeholder="Status: All"

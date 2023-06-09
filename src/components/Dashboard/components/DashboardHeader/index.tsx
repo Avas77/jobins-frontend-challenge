@@ -1,11 +1,28 @@
 import React from "react";
-import { Avatar, AvatarBadge, Box, Flex, Heading } from "@chakra-ui/react";
+import {
+  Avatar,
+  AvatarBadge,
+  Box,
+  Flex,
+  HStack,
+  Heading,
+} from "@chakra-ui/react";
 import ICBell from "../../../../icons/ic-bell";
+import ICIndent from "../../../../icons/ic-indent";
 
-const DashboardHeader = () => {
+interface IDashboardHeaderProps {
+  setShowSidebar: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const DashboardHeader = ({ setShowSidebar }: IDashboardHeaderProps) => {
   return (
     <Flex justify="space-between">
-      <Heading as="h4">Dashboard</Heading>
+      <HStack gap="1rem">
+        <Box onClick={() => setShowSidebar(true)}>
+          <ICIndent width="2.4rem" />
+        </Box>
+        <Heading as="h4">Dashboard</Heading>
+      </HStack>
       <Flex align="center" position="relative">
         <Box
           _after={{
